@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 name: "ai-cloud-manager"
 version: "1.0.0"
 description: "AI agent that manages cloud servers based on traffic"
+=======
+name: "ai-cloud-manager"
+version: "1.0.0"
+description: "AI agent that manages cloud servers based on traffic"
+>>>>>>> b266043 (Updated Dockerfile)
 entrypoint: "python app.py"
