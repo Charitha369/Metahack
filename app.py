@@ -6,7 +6,7 @@ from environment import CloudEnv
 app = FastAPI()
 env = CloudEnv()
 
-@app.get("/")
+@app.get("/",include_in_schema=False)
 def homepage():
     return RedirectResponse(url='/docs')
 
