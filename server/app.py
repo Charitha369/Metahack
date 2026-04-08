@@ -17,3 +17,12 @@ def step(action: Action):
 @app.get("/state")
 def get_state():
     return env.state
+
+def main():
+    import uvicorn
+    # MUST be 0.0.0.0 to be visible outside the container
+    uvicorn.run(app, host="0.0.0.0", port=7860)
+
+
+if __name__ == "__main__":
+    main()
