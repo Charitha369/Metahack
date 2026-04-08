@@ -17,7 +17,7 @@ dependencies = [
 
 # This defines the "server entry point" the validator specifically asked for
 [project.scripts]
-server = "server.app:app"
+server = "server.app:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["server"]
