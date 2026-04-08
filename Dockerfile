@@ -20,4 +20,4 @@ EXPOSE 7860
 
 ENV PATH="/app/.venv/bin:$PATH"
 
-CMD ["python", "app.py"]
+CMD ["python", "inference.py"]

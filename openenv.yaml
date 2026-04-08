@@ -1,4 +1,4 @@
 name: "ai-cloud-manager"
 version: "1.0.0"
 description: "AI agent that manages cloud servers based on traffic"
-entrypoint: "python app.py"
+entrypoint: "python inference.py"
