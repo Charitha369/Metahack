@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "metahack-openenv"
 version = "0.1.0"
@@ -8,11 +12,15 @@ dependencies = [
     "fastapi",
     "uvicorn",
     "pydantic",
+    "openenv-core>=0.2.0"  # <-- Added: Mandatory for the hackathon
 ]
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+# This defines the "server entry point" the validator specifically asked for
+[project.scripts]
+server = "server.app:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["server"]
 
 [tool.uv]
 managed = true
